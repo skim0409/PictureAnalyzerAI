@@ -82,7 +82,6 @@ plt.show()
 
 
 prediction = model.predict(np.array([finalimg]))
-print(prediction)
 list_index = [0,1,2,3,4,5,6,7,8,9]
 x = prediction
 
