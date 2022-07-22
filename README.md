@@ -24,6 +24,9 @@ easily. However if the user would like to test their own input, do the following
 - On line 78 replace everything inside io.imread() with the path to the picture on your computer. Make sure the path is inside ''
 - For ex. io.imread('/Users/name/Dowloads/Cats_image.jpeg')
 
+## ps
+If the result is not printed try to close the pop up window containing the test photo.
+
 # How to Download
 - First create virtual environemnt
 ```
