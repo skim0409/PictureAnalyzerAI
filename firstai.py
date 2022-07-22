@@ -1,4 +1,5 @@
 import os.path
+import random
 
 import tensorflow as tf
 from keras.models import Sequential
@@ -75,7 +76,8 @@ print("truck")
 print('Choose the image to test: ')
 input = input()
 imgtype = input.lower()
-test1 = io.imread('https://skim-cifar.s3.ca-central-1.amazonaws.com/' + imgtype + '.jpeg') #replace with the path to your image if you would like to test your own piture
+rand_int = random.randint(1,3)
+test1 = io.imread('https://skim-cifar.s3.ca-central-1.amazonaws.com/' + imgtype + str(rand_int) + '.jpeg') #replace with the path to your image if you would like to test your own piture
 finalimg = resize(test1, (32,32,3))
 plt.imshow(finalimg)
 plt.show()
@@ -98,3 +100,4 @@ print("prediction ranking")
 print("-----------------")
 for i in range(3):
     print(i+1,'.', types[list_index[i]], '|', round(prediction[0][list_index[i]] * 100, 2), '%')
+print("_________________")
