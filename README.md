@@ -23,3 +23,28 @@ When the program is ran, there will be input to enter which picture the user wou
 easily. However if the user would like to test their own input, do the following.
 - On line 78 replace everything inside io.imread() with the path to the picture on your computer. Make sure the path is inside ''
 - For ex. io.imread('/Users/name/Dowloads/Cats_image.jpeg')
+
+# How to Download
+- First create virtual environemnt
+```
+conda create --name env_name python=3.9
+```
+env_name is your environment name
+
+- activate your env
+```
+conda activate env_name
+```
+- After, install requirements
+```
+pip install -r requirements.txt
+```
+- Lastly if you are using a mac
+```
+pip install tensorflow-macos
+```
+- if windows
+``` 
+pip install tensorflow
+```
+set the virtual env before running the program.
