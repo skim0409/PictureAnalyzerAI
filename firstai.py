@@ -80,7 +80,9 @@ rand_int = random.randint(1,3)
 test1 = io.imread('https://skim-cifar.s3.ca-central-1.amazonaws.com/' + imgtype + str(rand_int) + '.jpeg') #replace with the path to your image if you would like to test your own piture
 finalimg = resize(test1, (32,32,3))
 plt.imshow(finalimg)
+plt.imshow(test1)
 plt.show()
+
 
 
 prediction = model.predict(np.array([finalimg]))
